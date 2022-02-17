@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins & family= Righteous & display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    color: aliceblue;
+    background: linear-gradient(to right,#2F2325,#8E5D52
+    );
+    font-size: 100%;
+
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+.cabecalho-imagem{
+    height: 4em;
+}
+.cabecalho-menu{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+.cabecalho-menu-item{
+    font-family: 'Poppins', sans-serif;
+    color:  antiquewhite;
+    font-weight: 600;
+    font-size: 18px;
+}
+.conteudo{
+    border-top: .4px solid whitesmoke ;
+    margin-bottom: 45px;
+} 
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.conteudo-principal-escrito{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.conteudo-principal-titulo{
+    font-weight: 600;
+    font-family: 'Righteous', cursive;
+    font-size: 64px;
+    color:  antiquewhite;
+}
+.conteudo-principal-subtitulo{
+   font-weight: 400;
+   font-family: 'Poppins', sans-serif;
+   font-size: 25px;
+   color: antiquewhite;
+}
+.cabecalho-menu-item:hover{
+    color: #92665c;
+    transition: .5s;
+}
+.conteudo-principal-botao:hover{
+    background-color: #92665c;
+    color: antiquewhite;
+    transition: .5s;
+}
+
+.conteudo-principal-botao{
+    background-color: #c7a59d;
+    width: 180px; height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px #2F2325;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(82, 67, 49);
+}
+.conteudo-principal-imagem{
+    height: 28em;
+}
+
+.conteudo-secundario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 40px;
+}
+.conteudo-secundario-titulo{
+    border-top: .4px solid #92665c;
+    padding-top: 30px;
+    font-size: 24px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.conteudo-secundario-paragrafo{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+   
+    color: antiquewhite;
+}
+.rodape{
+    border-top: .4px solid whitesmoke;
+    padding: 2em;
+}
+.rodape-imagem{
+    height: 3em;
+    display: block;
+    margin: auto;
+}
+
+@media screen and (max-width:840px){
+    .cabecalho-menu-item{
+        font-size: 16px;
+    }
+    .cabecalho-menu{
+        gap:15px;
+    }
+    .conteudo-principal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .conteudo-principal-escrito{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .conteudo-principal-botao{
+        background-color: #c7a59d;
+        width: 150px; height: 30px;
+        border: none;
+        box-shadow: 3px 4px 3px #2F2325;
+        border-radius: 20px;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+        color: rgb(82, 67, 49);
+    }
+    .conteudo-secundario-paragrafo{
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif;
+        color: antiquewhite;
+    text-align:center;
+    }
+}
+@media screen and (max-width:480px){
+    .cabecalho-menu-item{
+        font-size: 11px;
+    }
+    .cabecalho-menu{
+        gap:10px;
+    }
+    .conteudo-principal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .conteudo-principal-escrito{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .cabecalho-imagem{
+        height: 2em;
+    }
+    .conteudo-principal-botao{
+        background-color: #c7a59d;
+        width: 130px; height: 25px;
+        border: none;
+        box-shadow: 3px 4px 3px #2F2325;
+        border-radius: 20px;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+        color: rgb(82, 67, 49);
+    }
+    .conteudo-principal-imagem{
+        height: 15em;
+    }
+    .conteudo-principal-titulo{
+        font-size: 54px;
+    }
+    .conteudo-principal-subtitulo{
+        font-size: 14px;
+    }
+    .conteudo-secundario-titulo{
+        font-size: 18px;
+    }
+    .conteudo-secundario-paragrafo{
+        font-size: 12px;
+        font-family: 'Poppins', sans-serif;
+        color: antiquewhite;
+    text-align:center;
+    }
+    .rodape-imagem{
+        height: 1.5em;
+    }
+}
